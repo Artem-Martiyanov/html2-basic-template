@@ -1,0 +1,60 @@
+.personal-nav {
+  &__list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    align-self: stretch;
+
+    &--burger {
+      @media ($mediaTablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    @include link-reset;
+    display: block;
+    padding: 22px;
+    height: 100%;
+
+    svg {
+      display: block;
+      color: inherit;
+    }
+
+    &:active {
+      background-color: $colorBaseSecondary;
+    }
+
+    @media ($mediaTablet) {
+      @include ease(color);
+      padding-top: 28px;
+      padding-bottom: 28px;
+
+      &:hover, &:focus-visible {
+        color: $colorBasePrimary;
+      }
+    }
+
+    @media ($mediaTablet) {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+
+  &__hidden-text {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    font-weight: 500;
+
+    @media ($mediaOnlyDesktop) {
+      @include visually-hidden;
+    }
+  }
+}
