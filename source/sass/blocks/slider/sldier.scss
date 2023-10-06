@@ -1,0 +1,69 @@
+.slider {
+  position: relative;
+
+  &__track {
+    @include list-reset;
+    overflow: hidden;
+    white-space: nowrap;
+
+  }
+
+  &__item {
+    width: 100vw;
+    display: inline-block;
+
+    &:nth-of-type(1) {
+      background-color: rgba(red, 0.5);
+    }
+
+    &:nth-of-type(2) {
+      background-color: rgba(green, 0.5);
+    }
+
+    &:nth-of-type(3) {
+      background-color: rgba(blue, 0.5);
+    }
+  }
+
+  &__arrow {
+    @include button-reset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      pointer-events: none;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 1px solid $colorBasePrimary;
+      border-right: 1px solid $colorBasePrimary;
+    }
+
+    &--prev {
+      left: 0;
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(-135deg);
+      }
+    }
+
+    &--next {
+      right: 0;
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  &__pagination {
+    @include list-reset;
+  }
+}
