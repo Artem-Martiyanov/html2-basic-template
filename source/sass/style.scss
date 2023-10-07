@@ -1,3 +1,6 @@
+/* VENDORS */
+@import "../js/vendor/no-ui-slider/nouislider.min";
+
 /* GLOBAL */
 @import "global/variables";
 @import "global/mixins";
@@ -11,6 +14,8 @@
 @import "blocks/ui/badge/badge";
 @import "blocks/ui/price/price";
 @import "blocks/ui/button/button";
+@import "blocks/ui/control/control";
+@import "blocks/ui/range-slider/range-slider";
 
   /* components */
 @import "blocks/page/page";
@@ -23,4 +28,6 @@
 @import "blocks/footer/footer";
 @import "blocks/intro/intro";
 @import "blocks/features/features";
+@import "blocks/filter-form/filter-form";
+@import "blocks/catalog/catalog";
 
