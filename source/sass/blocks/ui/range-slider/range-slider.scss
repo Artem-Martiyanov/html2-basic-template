@@ -6,7 +6,7 @@
   border-radius: 0;
 
   .noUi-connect {
-    background: $colorBasePrimary;
+    background: $colorPrimaryLighter;
   }
 
   .noUi-handle {
@@ -14,7 +14,7 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 2px solid $colorBasePrimary;
+    border: 2px solid $colorPrimaryLighter;
     background-color: $colorBaseWhite;
     box-shadow: inset 0 0 0 2px $colorBaseWhite;
     cursor: pointer;
