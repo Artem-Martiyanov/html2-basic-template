@@ -54,6 +54,7 @@
 
 @mixin ease($properties...) {
   transition: 0.15s ease;
+
   @if length($properties) > 0 {
     transition-property: $properties;
   }

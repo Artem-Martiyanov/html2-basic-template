@@ -62,7 +62,8 @@
     padding-top: 33px;
     padding-bottom: 29px;
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       color: $colorBasePrimary;
     }
 
@@ -74,5 +75,3 @@
     }
   }
 }
-
-

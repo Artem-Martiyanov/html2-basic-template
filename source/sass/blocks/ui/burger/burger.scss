@@ -5,17 +5,15 @@
   justify-content: center;
   align-items: center;
 
-  &--opened {
-    .burger__element {
-      background-color: transparent;
+  &--opened .burger__element {
+    background-color: transparent;
 
-      &::before {
-        transform: translateY(5px) rotate(-45deg);
-      }
+    &::before {
+      transform: translateY(5px) rotate(-45deg);
+    }
 
-      &::after {
-        transform: translateY(-5px) rotate(45deg);
-      }
+    &::after {
+      transform: translateY(-5px) rotate(45deg);
     }
   }
 
@@ -32,9 +30,10 @@
   background-color: currentColor;
   position: relative;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     @include ease(transform);
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;

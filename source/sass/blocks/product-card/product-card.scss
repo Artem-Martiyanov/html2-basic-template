@@ -7,7 +7,8 @@
     @include ease(box-shadow);
     padding: 50px 30px 30px;
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
     }
   }
@@ -16,7 +17,6 @@
 .product-card__content {
   @include link-reset;
   display: block;
-
 }
 
 .product-card__image {

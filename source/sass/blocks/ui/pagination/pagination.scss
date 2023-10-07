@@ -7,7 +7,6 @@
   @include list-reset;
   display: flex;
   gap: 20px;
-
 }
 
 .pagination__button {
@@ -21,7 +20,9 @@
     font-weight: 600;
     cursor: auto;
 
-    &:hover, &:focus-visible, &:active {
+    &:hover,
+    &:focus-visible,
+    &:active {
       background: none;
       color: $colorBaseBlack;
     }
@@ -32,7 +33,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 7px;
     height: 7px;

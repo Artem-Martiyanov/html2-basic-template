@@ -52,7 +52,8 @@
   font-weight: 500;
   letter-spacing: 0.24px;
 
-  &--address, &--phone {
+  &--address,
+  &--phone {
     text-transform: initial;
     font-weight: 400;
     letter-spacing: initial;
@@ -61,7 +62,7 @@
     font-size: 14px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 3px;
       display: inline-block;
@@ -89,7 +90,8 @@
     padding-top: 4px;
     padding-bottom: 4px;
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       color: $colorBasePrimary;
     }
   }
@@ -98,4 +100,3 @@
     color: $colorPrimaryDarker;
   }
 }
-

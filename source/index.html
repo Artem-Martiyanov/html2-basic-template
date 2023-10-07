@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <title>Интернет-магазин кофейных напитков</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Интернет-магазин кофейных напитков.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
-<header class="header">
+<header class="header" data-test="header">
   <div class="header__container container">
     <div class="header__logo">
       <picture>
-        <source media="(min-width: 1260px)" srcset="./images/general/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="./images/general/logo-tablet.svg">
+        <source type="image/svg+xml" media="(min-width: 1260px)" srcset="./images/general/logo-desktop.svg">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/general/logo-tablet.svg">
         <img src="./images/general/logo-mobile.svg" width="32" height="36"
              alt="Логотип интернет-магазина кофейных напитков DrinkToGo.">
       </picture>
@@ -47,7 +52,7 @@
         <li class="personal-nav__item">
           <a class="personal-nav__button" href="#" title="Перейти в личный кабинет">
             <svg width="16" height="16">
-              <use xlink:href="./images/icons/stack.svg#user"></use>
+              <use href="./images/icons/stack.svg#user"></use>
             </svg>
             <span class="personal-nav__hidden-text">Войти</span>
           </a>
@@ -55,13 +60,13 @@
         <li class="personal-nav__item">
           <a class="personal-nav__button" href="#" title="Перейти в корзину">
             <svg width="16" height="16">
-              <use xlink:href="./images/icons/stack.svg#cart"></use>
+              <use href="./images/icons/stack.svg#cart"></use>
             </svg>
             <span class="personal-nav__hidden-text">Корзина</span>
           </a>
         </li>
         <li class="personal-nav__item personal-nav__item--burger">
-          <button class="personal-nav__button burger" type="button" title="Меню">
+          <button class="personal-nav__button burger js-toggle-button" type="button" title="Меню">
             <span class="visually-hidden">Открыть/Закрыть меню.</span>
             <span class="burger__element"></span>
           </button>
@@ -72,10 +77,10 @@
 </header>
 <main class="page__content">
   <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
-  <section class="intro">
+  <section class="intro" data-test="hero">
     <h2 class="visually-hidden">Новинки</h2>
     <div class="slider">
-      <button class="slider__arrow slider__arrow--prev">
+      <button class="slider__arrow slider__arrow--prev slider-button-prev" type="button">
         <span class="visually-hidden">Предыдущий слайд.</span>
       </button>
       <div class="slider__inner">
@@ -90,9 +95,9 @@
                           srcset="./images/intro-slider/intro-slider-1-tablet.webp 1x, ./images/intro-slider/intro-slider-1-tablet@2x.webp 2x">
                   <source type="image/webp"
                           srcset="./images/intro-slider/intro-slider-1-tablet.webp 1x, ./images/intro-slider/intro-slider-1-tablet@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
+                  <source type="image/png" media="(min-width: 1440px)"
                           srcset="./images/intro-slider/intro-slider-1-desktop.png 1x, ./images/intro-slider/intro-slider-1-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)"
+                  <source type="image/png" media="(min-width: 768px)"
                           srcset="./images/intro-slider/intro-slider-1-tablet.png 1x, ./images/intro-slider/intro-slider-1-tablet@2x.png 2x">
                   <img src="./images/intro-slider/intro-slider-1-mobile.png"
                        srcset="./images/intro-slider/intro-slider-1-mobile@2x.png" width="280" height="280"
@@ -126,9 +131,9 @@
                           srcset="./images/intro-slider/intro-slider-2-tablet.webp 1x, ./images/intro-slider/intro-slider-2-tablet@2x.webp 2x">
                   <source type="image/webp"
                           srcset="./images/intro-slider/intro-slider-2-tablet.webp 1x, ./images/intro-slider/intro-slider-2-tablet@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
+                  <source type="image/png" media="(min-width: 1440px)"
                           srcset="./images/intro-slider/intro-slider-2-desktop.png 1x, ./images/intro-slider/intro-slider-2-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)"
+                  <source type="image/png" media="(min-width: 768px)"
                           srcset="./images/intro-slider/intro-slider-2-tablet.png 1x, ./images/intro-slider/intro-slider-2-tablet@2x.png 2x">
                   <img src="./images/intro-slider/intro-slider-2-mobile.png"
                        srcset="./images/intro-slider/intro-slider-2-mobile@2x.png" width="280" height="280"
@@ -162,9 +167,9 @@
                           srcset="./images/intro-slider/intro-slider-3-tablet.webp 1x, ./images/intro-slider/intro-slider-3-tablet@2x.webp 2x">
                   <source type="image/webp"
                           srcset="./images/intro-slider/intro-slider-3-tablet.webp 1x, ./images/intro-slider/intro-slider-3-tablet@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
+                  <source type="image/png" media="(min-width: 1440px)"
                           srcset="./images/intro-slider/intro-slider-3-desktop.png 1x, ./images/intro-slider/intro-slider-3-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)"
+                  <source type="image/png" media="(min-width: 768px)"
                           srcset="./images/intro-slider/intro-slider-3-tablet.png 1x, ./images/intro-slider/intro-slider-3-tablet@2x.png 2x">
                   <img src="./images/intro-slider/intro-slider-3-mobile.png"
                        srcset="./images/intro-slider/intro-slider-3-mobile@2x.png" width="280" height="280"
@@ -190,10 +195,10 @@
           </li>
         </ul>
       </div>
-      <button class="slider__arrow slider__arrow--next">
+      <button class="slider__arrow slider__arrow--next slider-button-next" type="button">
         <span class="visually-hidden">Следующий слайд.</span>
       </button>
-      <ol class="intro__slider-pagination slider__pagination">
+      <ol class="intro__slider-pagination slider__pagination slider-pagination">
         <li class="slider__pagination-item">
           <button class="slider__pagination-button" type="button">
             <span class="visually-hidden">Перейти на слайд.</span>
@@ -212,7 +217,7 @@
       </ol>
     </div>
   </section>
-  <section class="features">
+  <section class="features" data-test="features">
     <p class="features__badge badge">Преимущества</p>
     <h2 class="features__title page__title">Главные причины выбрать Drink2Go</h2>
     <ul class="features__list">
@@ -262,7 +267,7 @@
       </li>
     </ul>
   </section>
-  <section class="catalog">
+  <section class="catalog" data-test="catalog">
     <div class="catalog__container container">
       <p class="catalog__badge badge">Каталог</p>
       <h2 class="catalog__title page__title">Каталог кофейных напитков</h2>
@@ -271,13 +276,13 @@
           <fieldset class="filter-form__fieldset">
             <legend class="filter-form__legend filter-form__legend--range">Цена</legend>
             <div class="filter-form__price-range">
-              <div class="filter-form__price-slider range-slider" data-range='{"min": 0, "max": 1000}'></div>
+              <div class="filter-form__price-slider range-slider"></div>
               <div class="filter-form__price-range-inner">
-                <label class="filter-form__price-control text-filed">
+                <label class="filter-form__price-control text-field">
                   <input class="filter-form__price-input text-field__input" type="text" name="price-range-from"
                          placeholder="0">
                 </label>
-                <label class="filter-form__price-control text-filed">
+                <label class="filter-form__price-control text-field">
                   <input class="filter-form__price-input text-field__input" type="text" name="price-range-to">
                 </label>
               </div>
@@ -323,7 +328,7 @@
             <ul class="filter-form__list">
               <li class="filter-form__item">
                 <label class="control control--switcher">
-                  <input class="control__input visually-hidden" type="radio" name="plant-country" value="brazil"
+                  <input class="control__input visually-hidden" type="checkbox" name="plant-country" value="brazil"
                          checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Бразилия</span>
@@ -331,28 +336,28 @@
               </li>
               <li class="filter-form__item">
                 <label class="control control--switcher">
-                  <input class="control__input visually-hidden" type="radio" name="plant-country" value="ethiopia">
+                  <input class="control__input visually-hidden" type="checkbox" name="plant-country" value="ethiopia">
                   <span class="control__mark"></span>
                   <span class="control__label">Эфиопия</span>
                 </label>
               </li>
               <li class="filter-form__item">
                 <label class="control control--switcher">
-                  <input class="control__input visually-hidden" type="radio" name="plant-country" value="colombia">
+                  <input class="control__input visually-hidden" type="checkbox" name="plant-country" value="colombia">
                   <span class="control__mark"></span>
                   <span class="control__label">Колумбия</span>
                 </label>
               </li>
               <li class="filter-form__item">
                 <label class="control control--switcher">
-                  <input class="control__input visually-hidden" type="radio" name="plant-country" value="costa-rica">
+                  <input class="control__input visually-hidden" type="checkbox" name="plant-country" value="costa-rica">
                   <span class="control__mark"></span>
                   <span class="control__label">Коста-Рика</span>
                 </label>
               </li>
               <li class="filter-form__item">
                 <label class="control control--switcher">
-                  <input class="control__input visually-hidden" type="radio" name="plant-country" value="peru" disabled>
+                  <input class="control__input visually-hidden" type="checkbox" name="plant-country" value="peru" disabled>
                   <span class="control__mark"></span>
                   <span class="control__label">Перу</span>
                 </label>
@@ -365,7 +370,7 @@
           </footer>
         </form>
       </div>
-      <label class="catalog__dropdown dropdown">
+      <div class="catalog__dropdown dropdown">
         Сортировка:
         <span class="dropdown__select-wrapper">
         <select class="dropdown__select" name="filter-sort" form="filter-form">
@@ -374,7 +379,7 @@
         <option value="by-price">по цене</option>
       </select>
       </span>
-      </label>
+      </div>
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="product-card">
@@ -394,7 +399,7 @@
             </a>
             <footer class="product-card__footer">
               <b class="product-card__price price">225₽</b>
-              <button class="product-card__button button button--primary button--cart-add">В корзину</button>
+              <button class="product-card__button button button--primary button--cart-add" type="button">В корзину</button>
             </footer>
           </div>
         </li>
@@ -416,7 +421,7 @@
             </a>
             <footer class="product-card__footer">
               <b class="product-card__price price">225₽</b>
-              <button class="product-card__button button button--primary button--cart-add">В корзину</button>
+              <button class="product-card__button button button--primary button--cart-add" type="button">В корзину</button>
             </footer>
           </div>
         </li>
@@ -438,7 +443,7 @@
             </a>
             <footer class="product-card__footer">
               <b class="product-card__price price">225₽</b>
-              <button class="product-card__button button button--primary button--cart-add">В корзину</button>
+              <button class="product-card__button button button--primary button--cart-add" type="button">В корзину</button>
             </footer>
           </div>
         </li>
@@ -460,7 +465,7 @@
             </a>
             <footer class="product-card__footer">
               <b class="product-card__price price">225₽</b>
-              <button class="product-card__button button button--primary button--cart-add">В корзину</button>
+              <button class="product-card__button button button--primary button--cart-add" type="button">В корзину</button>
             </footer>
           </div>
         </li>
@@ -482,7 +487,7 @@
             </a>
             <footer class="product-card__footer">
               <b class="product-card__price price">225₽</b>
-              <button class="product-card__button button button--primary button--cart-add">В корзину</button>
+              <button class="product-card__button button button--primary button--cart-add" type="button">В корзину</button>
             </footer>
           </div>
         </li>
@@ -504,13 +509,13 @@
             </a>
             <footer class="product-card__footer">
               <b class="product-card__price price">225₽</b>
-              <button class="product-card__button button button--primary button--cart-add">В корзину</button>
+              <button class="product-card__button button button--primary button--cart-add" type="button">В корзину</button>
             </footer>
           </div>
         </li>
       </ul>
       <div class="catalog__pagination pagination">
-        <button class="pagination__arrow pagination__arrow--prev button button--secondary" title="Назад">
+        <button class="pagination__arrow pagination__arrow--prev button button--secondary"  type="button" title="Назад">
           <span>Назад</span>
         </button>
         <ol class="pagination__list">
@@ -525,38 +530,38 @@
             <button class="pagination__button button button--secondary" type="button">3</button>
           </li>
         </ol>
-        <button class="pagination__arrow pagination__arrow--next button button--secondary" title="Вперёд">
+        <button class="pagination__arrow pagination__arrow--next button button--secondary"  type="button" title="Вперёд">
           <span>Вперёд</span>
         </button>
       </div>
     </div>
   </section>
-  <section class="map">
+  <section class="map" data-test="map">
+    <h2 class="visually-hidden">Мы на карте.</h2>
     <picture>
       <source type="image/webp" media="(min-width: 1440px)"
               srcset="./images/map/map-desktop.webp 1x, ./images/map/map-desktop@2x.webp 2x">
       <source type="image/webp" media="(min-width: 768px)"
               srcset="./images/map/map-tablet.webp 1x, ./images/map/map-tablet@2x.webp 2x">
       <source type="image/webp" srcset="./images/map/map-mobile.webp 1x, ./images/map/map-mobile@2x.webp 2x">
-
-
-      <source media="(min-width: 1440px)" srcset="./images/map/map-desktop.jpg 1x, ./images/map/map-desktop@2x.jpg 2x">
-      <source media="(min-width: 768px)" srcset="./images/map/map-tablet.jpg 1x, ./images/map/map-tablet@2x.jpg 2x">
-      <img src="./images/map/map-mobile.jpg" srcset="./images/map/map-mobile@2x.jpg" alt="Карта проезда.">
+      <source type="image/jpg" media="(min-width: 1440px)" srcset="./images/map/map-desktop.jpg 1x, ./images/map/map-desktop@2x.jpg 2x">
+      <source type="image/jpg" media="(min-width: 768px)" srcset="./images/map/map-tablet.jpg 1x, ./images/map/map-tablet@2x.jpg 2x">
+      <img src="./images/map/map-mobile.jpg" srcset="./images/map/map-mobile@2x.jpg" width="320" height="420" alt="Карта проезда.">
     </picture>
   <button class="map__pin" type="button">
+    <span class="visually-hidden">Маркер карты.</span>
     <svg width="38" height="50">
-      <use xlink:href="./images/icons/stack.svg#map-pin"></use>
+      <use href="./images/icons/stack.svg#map-pin"></use>
     </svg>
   </button>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer" data-test="footer">
   <div class="footer__container">
     <div class="footer__inner">
       <div class="footer__logo">
         <picture>
-          <source media="(min-width: 768px)" srcset="./images/general/logo-desktop.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/general/logo-desktop.svg">
           <img src="./images/general/logo-tablet.svg" width="82" height="36"
                alt="Логотип интернет-магазина кофейных напитков DrinkToGo.">
         </picture>
@@ -567,7 +572,7 @@
           <a class="social__link" href="#" title="Наш Вконтакте">
             <span class="visually-hidden">Вконтакте.</span>
             <svg width="20" height="20">
-              <use xlink:href="./images/icons/stack.svg#social-vk"></use>
+              <use href="./images/icons/stack.svg#social-vk"></use>
             </svg>
           </a>
         </li>
@@ -575,7 +580,7 @@
           <a class="social__link" href="#" title="Наш Pinterest">
             <span class="visually-hidden">Pinterest.</span>
             <svg width="22" height="22">
-              <use xlink:href="./images/icons/stack.svg#social-pinterest"></use>
+              <use href="./images/icons/stack.svg#social-pinterest"></use>
             </svg>
           </a>
         </li>
@@ -583,7 +588,7 @@
           <a class="social__link" href="#" title="Наши Одноклассники">
             <span class="visually-hidden">Одноклассники.</span>
             <svg width="20" height="20">
-              <use xlink:href="./images/icons/stack.svg#social-ok"></use>
+              <use href="./images/icons/stack.svg#social-ok"></use>
             </svg>
           </a>
         </li>
@@ -642,7 +647,8 @@
           <li class="footer-nav__item">
             <a class="footer-nav__link footer-nav__link--address"
                href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5/Z0kYdQZmS0IFQFtjfXV3eX1gYw==/?ll=30.316272%2C59.968137&z=17.05"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
               Санкт-Петербург, набережная реки Карповки, дом 5
             </a>
           </li>
@@ -657,10 +663,10 @@
   </div>
   <div class="footer__copyright">
     <p class="footer__copyright-text">Разработано в
-      <a href="#">
+      <a href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
         <svg width="12" height="16">
-          <use xlink:href="./images/icons/stack.svg#academy-logo"></use>
+          <use href="./images/icons/stack.svg#academy-logo"></use>
         </svg>
       </a>
     </p>

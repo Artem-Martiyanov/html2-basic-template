@@ -1,11 +1,13 @@
 const priceInputs = document.querySelectorAll('.filter-form__price-input')
 const priceSliderElement = document.querySelector('.range-slider')
 
-
 const priceSlider = noUiSlider.create(priceSliderElement, {
   start: [0, 900],
   connect: true,
-  range: JSON.parse(priceSliderElement.dataset.range),
+  range: {
+    'min': 0,
+    'max': 1000,
+  },
   format: {
     to: (value) => value.toFixed(0),
     from: (value) => value

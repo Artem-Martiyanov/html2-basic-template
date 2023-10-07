@@ -29,7 +29,7 @@
     padding-bottom: 6px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 20px;
       top: 50%;
@@ -43,7 +43,8 @@
 
 
   @media ($mediaTablet) {
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       background-color: $colorPrimaryLighter;
       color: $colorBaseWhite;
     }
@@ -65,7 +66,9 @@
   &--primary.button--disabled {
     background-color: $colorBaseGrey;
 
-    &:hover, &:focus-visible, &:active {
+    &:hover,
+    &:focus-visible,
+    &:active {
       background-color: $colorBaseGrey;
     }
   }
@@ -74,7 +77,9 @@
   &--secondary.button--disabled {
     background-color: $colorLightGrey;
 
-    &:hover, &:focus-visible, &:active {
+    &:hover,
+    &:focus-visible,
+    &:active {
       background-color: $colorLightGrey;
     }
   }

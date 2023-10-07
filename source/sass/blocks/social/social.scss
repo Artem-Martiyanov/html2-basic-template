@@ -20,7 +20,8 @@
   }
 
   @media ($mediaTablet) {
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       color: $colorBasePrimary;
       background-color: $colorBaseSecondary;
     }
@@ -31,4 +32,3 @@
     background-color: $colorPrimaryOpacity;
   }
 }
-

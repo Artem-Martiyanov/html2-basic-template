@@ -34,8 +34,6 @@
       margin-bottom: 32px;
     }
   }
-
-
 }
 
 .filter-form__price-slider {
@@ -67,7 +65,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       height: 2px;
       width: 8px;
@@ -76,6 +74,9 @@
       top: 50%;
       transform: translateY(-50%);
 
+      @media ($mediaDesktop) {
+        right: -29px;
+      }
     }
   }
 }
@@ -101,7 +102,6 @@
   @media ($mediaDesktop) {
     margin-top: 10px;
   }
-
 }
 
 .filter-form__button {
@@ -109,6 +109,3 @@
     flex: 1;
   }
 }
-
-
-

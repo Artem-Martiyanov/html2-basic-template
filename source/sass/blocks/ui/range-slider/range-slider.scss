@@ -22,12 +22,14 @@
     top: -10px;
     outline: none;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       display: none;
     }
 
     @media ($mediaTablet) {
-      &:hover, &:focus-visible {
+      &:hover,
+      &:focus-visible {
         background-color: #ddd5f3;
       }
     }
@@ -45,7 +47,8 @@
     background-color: $colorBaseGrey;
   }
 
-  .noUi-touch-area, .noUi-handle {
+  .noUi-touch-area,
+  .noUi-handle {
     cursor: auto;
   }
 

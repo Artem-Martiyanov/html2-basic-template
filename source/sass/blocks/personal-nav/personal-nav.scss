@@ -1,6 +1,3 @@
-.personal-nav {
-}
-
 .personal-nav__list {
   @include list-reset;
   display: flex;
@@ -41,7 +38,8 @@
     padding-top: 28px;
     padding-bottom: 28px;
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       color: $colorBasePrimary;
     }
   }
@@ -63,4 +61,3 @@
     @include visually-hidden;
   }
 }
-
