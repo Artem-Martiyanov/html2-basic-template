@@ -59,7 +59,7 @@
   @media ($mediaDesktop) {
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     padding-top: 30px;
     padding-bottom: 84px;
   }
@@ -92,6 +92,7 @@
 
   @media ($mediaDesktop) {
     align-items: flex-start;
+    padding-left: 7px;
   }
 }
 
@@ -123,7 +124,7 @@
   @media ($mediaTablet) {
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   @media ($mediaDesktop) {
@@ -139,5 +140,9 @@
 
   @media ($mediaTablet) {
     margin-bottom: 20px;
+  }
+
+  @media ($mediaDesktop) {
+    margin-bottom: 8px;
   }
 }

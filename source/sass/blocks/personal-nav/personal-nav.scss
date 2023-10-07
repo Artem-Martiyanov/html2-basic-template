@@ -5,6 +5,10 @@
   @include list-reset;
   display: flex;
   align-items: center;
+
+  @media ($mediaDesktop) {
+    gap: 15px;
+  }
 }
 
 .personal-nav__item {
@@ -55,7 +59,7 @@
   letter-spacing: 0.24px;
   font-weight: 500;
 
-  @media ($mediaOnlyDesktop) {
+  @media ($mediaNoDesktop) {
     @include visually-hidden;
   }
 }

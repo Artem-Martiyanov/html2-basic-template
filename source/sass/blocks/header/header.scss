@@ -17,6 +17,11 @@
   align-items: center;
   padding-right: 0;
 
+  @media ($mediaTablet) {
+    padding-right: $containerIndent;
+
+  }
+
   @media ($mediaDesktop) {
     padding-right: $containerIndentDesktop;
   }
@@ -53,7 +58,7 @@
   }
 
   @media ($mediaDesktop) {
-    margin: 0 auto;
+    margin: 0 160px 0 auto;
   }
 }
 

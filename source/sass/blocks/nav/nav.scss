@@ -17,6 +17,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media ($mediaDesktop) {
+    gap: 20px;
+  }
 }
 
 .nav__item {
