@@ -76,21 +76,23 @@
     }
   }
 
+  &:disabled {
+    background: transparent;
+
+    &::after {
+      border-color: $colorBaseGrey;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: transparent;
+      cursor: auto;
+    }
+  }
+
   @media ($mediaTablet) {
     width: 80px;
     height: 77%;
-
-    &:disabled {
-      &::after {
-        border-color: $colorBaseGrey;
-      }
-
-      &:hover,
-      &:focus-visible {
-        background: transparent;
-        cursor: auto;
-      }
-    }
   }
 
   @media ($mediaDesktop) {
