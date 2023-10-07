@@ -103,20 +103,10 @@
   left: 50%;
   transform: translateX(-50%);
   width: 202px;
-  bottom: 5px;
+  bottom: 60px;
 
   @media ($mediaDesktop) {
     display: flex;
-  }
-}
-
-.slider__pagination-item {
-  flex: 1;
-
-  &--current {
-    .slider__pagination-button::after {
-      background-color: $colorBasePrimary;
-    }
   }
 }
 
@@ -136,6 +126,22 @@
     transform: translateY(-50%);
     background-color: $colorBaseWhite;
     height: 4px;
+  }
+
+  &:hover, &:focus-visible {
+    &::after {
+      background-color: $colorPrimaryOpacity;
+    }
+  }
+}
+
+.slider__pagination-item {
+  flex: 1;
+
+  &--current {
+    .slider__pagination-button::after {
+      background-color: $colorBasePrimary;
+    }
   }
 }
 

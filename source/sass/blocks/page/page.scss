@@ -25,3 +25,15 @@
   flex: 1;
 }
 
+.page__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+
+  @media ($mediaTablet) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
