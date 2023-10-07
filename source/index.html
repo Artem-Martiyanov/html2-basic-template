@@ -74,35 +74,143 @@
   <section class="intro">
 
 
-    <div class="slider" data-slider>
+    <div class="slider">
       <button class="slider__arrow slider__arrow--prev">
         <span class="visually-hidden">Предыдущий слайд.</span>
       </button>
-      <ul class="slider__track">
-        <li class="slider__item">1</li>
-        <li class="slider__item">2</li>
-        <li class="slider__item">3</li>
-      </ul>
+      <div class="slider__inner">
+        <ul class="slider__track">
+          <li class="slider__item">
+            <div class="intro__slide intro__slide--flat-white">
+              <div class="intro__slide-image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="./images/intro-slider/intro-slider-1-desktop.webp 1x, ./images/intro-slider/intro-slider-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="./images/intro-slider/intro-slider-1-tablet.webp 1x, ./images/intro-slider/intro-slider-1-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="./images/intro-slider/intro-slider-1-tablet.webp 1x, ./images/intro-slider/intro-slider-1-tablet@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                          srcset="./images/intro-slider/intro-slider-1-desktop.png 1x, ./images/intro-slider/intro-slider-1-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="./images/intro-slider/intro-slider-1-tablet.png 1x, ./images/intro-slider/intro-slider-1-tablet@2x.png 2x">
+                  <img src="./images/intro-slider/intro-slider-1-mobile.png"
+                       srcset="./images/intro-slider/intro-slider-1-mobile@2x.png" width="280" height="280"
+                       alt="Банка напитка Декаф Флэт Уайт.">
+                </picture>
+              </div>
+              <div class="intro__slide-content">
+                <p class="intro__badge badge">Новинка!</p>
+                <h2 class="intro__slide-title">Декаф Флэт Уайт</h2>
+                <p class="intro__slide-text">
+                  Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления
+                  после тяжёлого рабочего дня
+                </p>
+                <footer class="intro__slide-footer">
+                  <p class="intro__slide-price price">
+                    <span class="price__old">295₽</span>
+                    225₽
+                  </p>
+                  <a class="intro__order-button button button--primary" href="#">Заказать</a>
+                </footer>
+              </div>
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="intro__slide intro__slide--lavender">
+              <div class="intro__slide-image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="./images/intro-slider/intro-slider-2-desktop.webp 1x, ./images/intro-slider/intro-slider-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="./images/intro-slider/intro-slider-2-tablet.webp 1x, ./images/intro-slider/intro-slider-2-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="./images/intro-slider/intro-slider-2-tablet.webp 1x, ./images/intro-slider/intro-slider-2-tablet@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                          srcset="./images/intro-slider/intro-slider-2-desktop.png 1x, ./images/intro-slider/intro-slider-2-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="./images/intro-slider/intro-slider-2-tablet.png 1x, ./images/intro-slider/intro-slider-2-tablet@2x.png 2x">
+                  <img src="./images/intro-slider/intro-slider-2-mobile.png"
+                       srcset="./images/intro-slider/intro-slider-2-mobile@2x.png" width="280" height="280"
+                       alt="Банка напитка Лавандовый Латте.">
+                </picture>
+              </div>
+              <div class="intro__slide-content">
+                <p class="intro__badge badge">Новинка!</p>
+                <h2 class="intro__slide-title">Лавандовый Латте</h2>
+                <p class="intro__slide-text">
+                  Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас
+                  прямо на вершину Радужных гор
+                </p>
+                <footer class="intro__slide-footer">
+                  <p class="intro__slide-price price">
+                    <span class="price__old">285₽</span>
+                    265₽
+                  </p>
+                  <a class="intro__order-button button button--primary" href="#">Заказать</a>
+                </footer>
+              </div>
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="intro__slide intro__slide--espresso">
+              <div class="intro__slide-image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="./images/intro-slider/intro-slider-3-desktop.webp 1x, ./images/intro-slider/intro-slider-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="./images/intro-slider/intro-slider-3-tablet.webp 1x, ./images/intro-slider/intro-slider-3-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="./images/intro-slider/intro-slider-3-tablet.webp 1x, ./images/intro-slider/intro-slider-3-tablet@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                          srcset="./images/intro-slider/intro-slider-3-desktop.png 1x, ./images/intro-slider/intro-slider-3-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="./images/intro-slider/intro-slider-3-tablet.png 1x, ./images/intro-slider/intro-slider-3-tablet@2x.png 2x">
+                  <img src="./images/intro-slider/intro-slider-3-mobile.png"
+                       srcset="./images/intro-slider/intro-slider-3-mobile@2x.png" width="280" height="280"
+                       alt="Банка напитка Тройной Эспрессо.">
+                </picture>
+              </div>
+              <div class="intro__slide-content">
+                <p class="intro__badge badge">Новинка!</p>
+                <h2 class="intro__slide-title">Тройной Эспрессо</h2>
+                <p class="intro__slide-text">
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что
+                  такое настоящая бодрость
+                </p>
+                <footer class="intro__slide-footer">
+                  <p class="intro__slide-price price">
+                    <span class="price__old">395₽</span>
+                    375₽
+                  </p>
+                  <a class="intro__order-button button button--primary" href="#">Заказать</a>
+                </footer>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
       <button class="slider__arrow slider__arrow--next">
         <span class="visually-hidden">Следующий слайд.</span>
       </button>
-      <ul class="slider__pagination">
-        <li class="slider__pagination-item"></li>
-        <li class="slider__pagination-item"></li>
-        <li class="slider__pagination-item"></li>
-      </ul>
+      <ol class="intro__slider-pagination slider__pagination">
+        <li class="slider__pagination-item">
+          <button class="slider__pagination-button" type="button">
+            <span class="visually-hidden">Перейти на слайд.</span>
+          </button>
+        </li>
+        <li class="slider__pagination-item">
+          <button class="slider__pagination-button" type="button">
+            <span class="visually-hidden">Перейти на слайд.</span>
+          </button>
+        </li>
+        <li class="slider__pagination-item">
+          <button class="slider__pagination-button" type="button">
+            <span class="visually-hidden">Перейти на слайд.</span>
+          </button>
+        </li>
+      </ol>
     </div>
-
-<!--    <div class="slider" data-slider>-->
-<!--        <div class="slider__item">1</div>-->
-<!--        <div class="slider__item">2</div>-->
-<!--        <div class="slider__item">3</div>-->
-<!--    </div>-->
-
-
-
-
-
   </section>
 
 

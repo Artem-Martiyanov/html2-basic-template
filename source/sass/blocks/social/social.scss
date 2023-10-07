@@ -3,30 +3,32 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
 
-  &__link {
-    @include link-reset;
-    @include ease(color, background-color);
-    padding: 10px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $colorBaseGrey;
+.social__link {
+  @include link-reset;
+  @include ease(color, background-color);
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorBaseGrey;
 
-    svg {
-      display: block;
-    }
+  svg {
+    display: block;
+  }
 
-    @media ($mediaTablet) {
-      &:hover, &:focus-visible {
-        color: $colorBasePrimary;
-        background-color: $colorBaseSecondary;
-      }
-
-      &:active {
-        background-color: $colorPrimaryOpacity;
-      }
+  @media ($mediaTablet) {
+    &:hover, &:focus-visible {
+      color: $colorBasePrimary;
+      background-color: $colorBaseSecondary;
     }
   }
+
+  &:active {
+    color: $colorBasePrimary;
+    background-color: $colorPrimaryOpacity;
+  }
 }
+

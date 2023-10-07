@@ -1,0 +1,60 @@
+.button {
+  @include button-reset;
+  @include link-reset;
+  @include ease(background-color);
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+
+
+  &--primary {
+    background-color: $colorBasePrimary;
+    color: $colorBaseWhite;
+  }
+
+  &--secondary {
+    background-color: $colorBaseWhite;
+    color: $colorBasePrimary;
+  }
+
+
+  @media ($mediaTablet) {
+    &:hover, &:focus-visible {
+      background-color: $colorPrimaryLighter;
+      color: $colorBaseWhite;
+    }
+  }
+
+  &:active {
+    background-color: $colorPrimaryDarker;
+    color: $colorBaseWhite;
+  }
+
+  &:disabled,
+  &.button--disabled {
+    cursor: auto;
+    pointer-events: none;
+    color: $colorBaseWhite;
+  }
+
+  &--primary:disabled,
+  &--primary.button--disabled {
+    background-color: $colorBaseGrey;
+
+    &:hover, &:focus-visible, &:active {
+      background-color: $colorBaseGrey;
+    }
+  }
+
+  &--secondary:disabled,
+  &--secondary.button--disabled {
+    background-color: $colorLightGrey;
+
+    &:hover, &:focus-visible, &:active {
+      background-color: $colorLightGrey;
+    }
+  }
+}

@@ -52,18 +52,7 @@
   clip: rect(0 0 0 0);
 }
 
-@mixin regularText {
-  font-size: 14px;
-  line-height: 20px;
-  color: $colorBaseBlack;
-
-  @media ($mediaTablet) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-@mixin ease ($properties...) {
+@mixin ease($properties...) {
   transition: 0.15s ease;
   @if length($properties) > 0 {
     transition-property: $properties;
